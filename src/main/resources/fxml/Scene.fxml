@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FXMLController">
+    <children>
+        <Button fx:id="button" layoutX="304.0" layoutY="61.0" onAction="#handleButtonAction" text="検索" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <TextField fx:id="nameTextField" layoutX="122.0" layoutY="61.0" onKeyPressed="#handleButtonKeyPressAction" />
+      <TableView fx:id="empTableView" layoutX="14.0" layoutY="100.0" prefHeight="298.0" prefWidth="430.0">
+        <columns>
+          <TableColumn fx:id="empIdColumn" prefWidth="75.0" text="社員ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="140.0" text="氏名" />
+            <TableColumn fx:id="joinedDateColumn" prefWidth="109.0" text="入社年月日" />
+            <TableColumn fx:id="deptNameColumn" prefWidth="105.0" text="部署名" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="66.0" text="氏名キーワード：" />
+      <Button fx:id="clearButton" layoutX="365.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleClearButtonAction" text="表をクリア" />
+      <Label layoutX="13.0" layoutY="27.0" text="ターゲットURL：" />
+      <TextField fx:id="targetUrlTextField" layoutX="122.0" layoutY="22.0" prefHeight="27.0" prefWidth="324.0" text="http://localhost:8080/JavaFxRestClient_Server/api/employees" />
+    </children>
+</AnchorPane>
