@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -121,7 +122,7 @@ public class FXMLController implements Initializable {
         empTableView.getItems().clear();
     }
 
-    private void showDialog(Alert.AlertType alertType, String title, 
+    private void showDialog(AlertType alertType, String title, 
             String header, String content) {
         Alert alert = new Alert(alertType);
         alert.setTitle(title);
