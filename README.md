@@ -12,30 +12,8 @@ JavaFX 8 + JAX-RS Client APIで作ったRESTクライアントです。
 - JavaFX Scene Builder 8.0.0
 - OS X El Capitan
 
-## WebAPI仕様
+## サーバー側
+PayaraMicroRestServerプロジェクトを利用してください。
 
-### リクエスト例
-GET /JavaFxRestClient_Server/api/employees?name=m HTTP/1.1
-
-### レスポンス例
-HTTP/1.1 200 OK
-Content-Type: application/json;charset=UTF-8
-```
-[ {
-  "name" : "Yumi Wakatsuki",
-  "emp_id" : 1,
-  "joined_date" : 1427814000000,
-  "department" : {
-    "name" : "Sales",
-    "dept_id" : 1
-  }
-}, {
-  "name" : "Mai Fukagawa",
-  "emp_id" : 2,
-  "joined_date" : 1427814000000,
-  "department" : {
-    "name" : "Sales",
-    "dept_id" : 1
-  }
-} ]
-```
+## 起動方法
+IDEから、com.example.MainAppクラスから起動してください。（NetBeansで確認済み）

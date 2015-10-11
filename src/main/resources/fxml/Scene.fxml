@@ -22,6 +22,6 @@
       <Label layoutX="15.0" layoutY="66.0" text="氏名キーワード：" />
       <Button fx:id="clearButton" layoutX="365.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleClearButtonAction" text="表をクリア" />
       <Label layoutX="13.0" layoutY="27.0" text="ターゲットURL：" />
-      <TextField fx:id="targetUrlTextField" layoutX="122.0" layoutY="22.0" prefHeight="27.0" prefWidth="324.0" text="http://localhost:8080/JavaFxRestClient_Server/api/employees" />
+      <TextField fx:id="targetUrlTextField" layoutX="122.0" layoutY="22.0" prefHeight="27.0" prefWidth="324.0" text="http://localhost:8080/rest/api/employees" />
     </children>
 </AnchorPane>
